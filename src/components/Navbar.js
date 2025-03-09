@@ -17,7 +17,7 @@ const NavContainer = styled.nav`
     background-color: #4a4a4a;// Kolor tła menu na mniejszych ekranach
     padding: 0.5rem; /* Zmniejszony padding na mniejszych ekranach */
     position: absolute; // Pozycjonowanie absolutne
-    top: 277px; // Odstęp od góry (dostosuj do wysokości hamburgera)
+    top: 240px; // Odstęp od góry (dostosuj do wysokości hamburgera)
     left: 0;
     width: 100%;
     height: auto; // Wysokość dostosowuje się do zawartości
