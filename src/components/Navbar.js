@@ -17,7 +17,7 @@ const NavContainer = styled.nav`
     background-color: #4a4a4a;
     padding: 0.5rem;
     position: absolute;
-    top: 240px; // Ustawienie top na 240px na mniejszych ekranach
+    top: 198px; // Ustawienie top na 240px na mniejszych ekranach
     left: 0;
     width: 100%;
     height: auto;
