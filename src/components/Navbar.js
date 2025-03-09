@@ -26,15 +26,15 @@ const NavContainer = styled.nav`
   }
 
   @media (max-width: 500px) {
-    top: 198px; 
+    top: 194px; 
   }
 
   @media (max-width: 400px) {
-    top: 198px; 
+    top: 194px; 
   }
 
   @media (max-width: 375px) {
-    top:198px; 
+    top:194px; 
   }
 `;
 
