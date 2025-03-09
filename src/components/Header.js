@@ -15,20 +15,38 @@ const HeaderContainer = styled.header`
   );
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-  @media (max-width: 768px) {
+  @media (max-width: 500px) {
     flex-direction: column;
-    align-items: center; /* Wyśrodkowanie elementów na mniejszych ekranach */
-    text-align: center; /* Wyśrodkowanie tekstu na mniejszych ekranach */
-    padding: 1rem; /* Mniejszy padding na mniejszych ekranach */
+    align-items: center;
+    text-align: center;
+    padding: 0.8rem;
+    gap: 0.5rem; /* Dodaje odstęp między logo a tekstem */
+  }
+
+  @media (max-width: 400px) {
+    padding: 0.6rem;
+    gap: 0.3rem;
+  }
+
+  @media (max-width: 375px) {
+    padding: 0.5rem;
+    gap: 0.2rem;
   }
 `;
 
 const Logo = styled.img`
-  height: 100px; /* Rozmiar logo na większych ekranach */
+  height: 100px;
 
-  @media (max-width: 768px) {
-    height: 80px; /* Mniejszy rozmiar logo na mniejszych ekranach */
-    margin-bottom: 0.5rem; /* Dodany margines pod logo */
+  @media (max-width: 500px) {
+    height: 75px;
+  }
+
+  @media (max-width: 400px) {
+    height: 70px;
+  }
+
+  @media (max-width: 375px) {
+    height: 65px;
   }
 `;
 
@@ -36,39 +54,41 @@ const Title = styled.h1`
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 35px;
   letter-spacing: 2px;
-  word-spacing: 2px;
   color: white;
-  font-weight: normal;
-  text-decoration: none;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: none;
-  margin: 0; /* Usunięcie domyślnego marginesu */
+  margin: 0;
 
-  @media (max-width: 768px) {
-    font-size: 28px; /* Mniejszy rozmiar czcionki na mniejszych ekranach */
-    margin-bottom: 0.5rem; /* Dodany margines pod tytułem */
+  @media (max-width: 500px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 24px;
   }
 `;
 
 const Slogan = styled.p`
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 13px;
-  letter-spacing: 2px;
-  word-spacing: 2px;
+  letter-spacing: 1.5px;
   color: white;
-  font-weight: normal;
-  text-decoration: none;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: none;
-  margin: 0; /* Usunięcie domyślnego marginesu */
+  margin: 0;
 
-  @media (max-width: 768px) {
-    font-size: 12px; /* Mniejszy rozmiar czcionki na mniejszych ekranach */
+  @media (max-width: 500px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 11px;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 10px;
   }
 `;
-
 const Header = () => (
   <HeaderContainer>
     <Link to="/">
