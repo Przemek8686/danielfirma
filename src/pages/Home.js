@@ -118,7 +118,7 @@ const ListItem = styled.li`
 `;
 
 const Footer = styled.footer`
-  background-color: rgb(56, 52, 55); // Ciemne tło stopki
+  background-color: #4a4a4a;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); // Dodany cień od dołu
   color: #fff; // Biały tekst
   text-align: center;

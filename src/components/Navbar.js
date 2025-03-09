@@ -6,7 +6,7 @@ import { FaBars } from 'react-icons/fa';
 const NavContainer = styled.nav`
   display: flex;
   justify-content: space-around;
-  background-color: rgb(56, 52, 55); // Ciemne tło stopki
+  background-color:  #4a4a4a;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); // Dodany cień od dołu
   padding: 0.4rem; /* Zmniejszony padding */
 
@@ -14,7 +14,7 @@ const NavContainer = styled.nav`
     flex-direction: column;
     align-items: center;
     display: ${({ $isOpen }) => ($isOpen ? 'flex' : 'none')}; // Użyj transient prop $isOpen
-    background-color: #50494f; // Kolor tła menu na mniejszych ekranach
+    background-color: #4a4a4a;// Kolor tła menu na mniejszych ekranach
     padding: 0.5rem; /* Zmniejszony padding na mniejszych ekranach */
     position: absolute; // Pozycjonowanie absolutne
     top: 277px; // Odstęp od góry (dostosuj do wysokości hamburgera)
@@ -51,7 +51,7 @@ const Hamburger = styled.div`
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
-  background-color: #50494f;
+  background-color: #4a4a4a;
   padding: 0.5rem; // Dodany padding dla lepszego wyglądu
   position: relative; // Ustawiamy pozycjonowanie względne
   z-index: 1001; // Upewnij się, że hamburger jest na wierzchu
