@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/danielfirma/static/js/main.7e6ad8ad.js",
+    "main.js": "/danielfirma/static/js/main.d788fc6c.js",
     "static/media/tlo.jpg": "/danielfirma/static/media/tlo.443196b5c56c09b54803.jpg",
     "static/media/project3.jpg": "/danielfirma/static/media/project3.2d22531715167758ae87.jpg",
     "static/media/project2.jpg": "/danielfirma/static/media/project2.fb92c506a411e258a34d.jpg",
@@ -8,9 +8,9 @@
     "static/media/project4.jpg": "/danielfirma/static/media/project4.973b4ccfd0ca09f882c6.jpg",
     "static/media/logo1.png": "/danielfirma/static/media/logo1.06d4b97d7f8f9fb3d5cb.png",
     "index.html": "/danielfirma/index.html",
-    "main.7e6ad8ad.js.map": "/danielfirma/static/js/main.7e6ad8ad.js.map"
+    "main.d788fc6c.js.map": "/danielfirma/static/js/main.d788fc6c.js.map"
   },
   "entrypoints": [
-    "static/js/main.7e6ad8ad.js"
+    "static/js/main.d788fc6c.js"
   ]
 }
