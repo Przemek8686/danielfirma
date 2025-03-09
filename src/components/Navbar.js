@@ -17,7 +17,7 @@ const NavContainer = styled.nav`
     background-color: #4a4a4a;
     padding: 0.5rem;
     position: absolute;
-    top: 198px; // Ustawienie top na 240px na mniejszych ekranach
+    top: 192px; // Ustawienie top na 240px na mniejszych ekranach
     left: 0;
     width: 100%;
     height: auto;
@@ -26,15 +26,15 @@ const NavContainer = styled.nav`
   }
 
   @media (max-width: 500px) {
-    top: 194px; 
+    top: 190px; 
   }
 
   @media (max-width: 400px) {
-    top: 194px; 
+    top: 190px; 
   }
 
   @media (max-width: 375px) {
-    top:194px; 
+    top:190px; 
   }
 `;
 
