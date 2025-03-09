@@ -34,7 +34,7 @@ const NavContainer = styled.nav`
   }
 
   @media (max-width: 375px) {
-    top: 240px; // Zachowanie top: 240px na 375px
+    top:198; // Zachowanie top: 240px na 375px
   }
 `;
 
