@@ -26,15 +26,15 @@ const NavContainer = styled.nav`
   }
 
   @media (max-width: 500px) {
-    top: 198px; // Zachowanie top: 240px na 500px
+    top: 198px; 
   }
 
   @media (max-width: 400px) {
-    top: 198px; // Zachowanie top: 240px na 400px
+    top: 198px; 
   }
 
   @media (max-width: 375px) {
-    top:198px; // Zachowanie top: 240px na 375px
+    top:198px; 
   }
 `;
 
