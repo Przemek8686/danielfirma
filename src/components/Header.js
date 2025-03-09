@@ -42,11 +42,11 @@ const Logo = styled.img`
   }
 
   @media (max-width: 400px) {
-    height: 70px;
+    height: 50px;
   }
 
   @media (max-width: 375px) {
-    height: 65px;
+    height: 50px;
   }
 `;
 
@@ -58,15 +58,15 @@ const Title = styled.h1`
   margin: 0;
 
   @media (max-width: 500px) {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   @media (max-width: 400px) {
-    font-size: 26px;
+    font-size: 20px;
   }
 
   @media (max-width: 375px) {
-    font-size: 24px;
+    font-size: 18px;
   }
 `;
 
@@ -78,15 +78,15 @@ const Slogan = styled.p`
   margin: 0;
 
   @media (max-width: 500px) {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   @media (max-width: 400px) {
-    font-size: 11px;
+    font-size: 8px;
   }
 
   @media (max-width: 375px) {
-    font-size: 10px;
+    font-size: 8px;
   }
 `;
 const Header = () => (
