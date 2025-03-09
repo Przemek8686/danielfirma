@@ -26,7 +26,7 @@ const NavContainer = styled.nav`
   }
 
   @media (max-width: 500px) {
-    top: 240px; // Zachowanie top: 240px na 500px
+    top: 198px; // Zachowanie top: 240px na 500px
   }
 
   @media (max-width: 400px) {
