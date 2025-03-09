@@ -6,23 +6,35 @@ import { FaBars } from 'react-icons/fa';
 const NavContainer = styled.nav`
   display: flex;
   justify-content: space-around;
-  background-color:  #4a4a4a;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); // Dodany cień od dołu
-  padding: 0.4rem; /* Zmniejszony padding */
+  background-color: #4a4a4a;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 0.4rem;
 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    display: ${({ $isOpen }) => ($isOpen ? 'flex' : 'none')}; // Użyj transient prop $isOpen
-    background-color: #4a4a4a;// Kolor tła menu na mniejszych ekranach
-    padding: 0.5rem; /* Zmniejszony padding na mniejszych ekranach */
-    position: absolute; // Pozycjonowanie absolutne
-    top: 240px; // Odstęp od góry (dostosuj do wysokości hamburgera)
+    display: ${({ $isOpen }) => ($isOpen ? 'flex' : 'none')};
+    background-color: #4a4a4a;
+    padding: 0.5rem;
+    position: absolute;
+    top: 240px; // Ustawienie top na 240px na mniejszych ekranach
     left: 0;
     width: 100%;
-    height: auto; // Wysokość dostosowuje się do zawartości
-    z-index: 1000; // Upewnij się, że menu jest na wierzchu
-    overflow-y: auto; // Dodaj przewijanie, jeśli zawartość jest zbyt długa
+    height: auto;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  @media (max-width: 500px) {
+    top: 240px; // Zachowanie top: 240px na 500px
+  }
+
+  @media (max-width: 400px) {
+    top: 240px; // Zachowanie top: 240px na 400px
+  }
+
+  @media (max-width: 375px) {
+    top: 240px; // Zachowanie top: 240px na 375px
   }
 `;
 
