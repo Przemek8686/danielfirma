@@ -35,21 +35,31 @@ const HomeContainer = styled.div`
 `;
 
 const ContentBox = styled.div`
-  border: 2px solid #fff; // Białe obramowanie
+  border: 2px solid #fff; 
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.7); // Półprzezroczyste tło
-  color: #fff; // Biały tekst
-  animation: ${slideIn} 1s ease-out; // Animacja wjeżdżania
-  max-width: 90%; // Ogranicz szerokość ramki
-  box-sizing: border-box; // Uwzględnij padding w wysokości
-  position: absolute; // Pozycjonowanie absolutne
-  top: 50%; // Przesuń ramkę do 50% wysokości kontenera
-  left: 50%; // Przesuń ramkę do 50% szerokości kontenera
-  transform: translate(-50%, -50%); // Wyśrodkuj ramkę
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  animation: ${slideIn} 1s ease-out;
+  max-width: 90%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-  @media (max-width: 768px) {
-    padding: 1rem; // Mniejszy padding na mniejszych ekranach
-    max-width: 95%; // Zwiększ szerokość na mniejszych ekranach
+  @media (max-width: 500px) {
+    padding: 1.5rem;
+    max-width: 85%;
+  }
+
+  @media (max-width: 400px) {
+    padding: 1rem;
+    max-width: 90%;
+  }
+
+  @media (max-width: 375px) {
+    padding: 0.8rem;
+    max-width: 95%;
   }
 `;
 
