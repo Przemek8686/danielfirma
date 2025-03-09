@@ -8,12 +8,12 @@ import Projecten from './pages/Projecten';
 import Contact from './pages/Contact';
 
 const App = () => (
-  <Router>
+  <Router basename="/danielfirma"> {/* Dodaj `basename` zgodne z GitHub Pages */}
     <GlobalStyles />
     <Header />
     <Navbar />
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home />} /> {/* Strona domyślna */}
       <Route path="/projecten" element={<Projecten />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
