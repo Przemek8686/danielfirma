@@ -43,9 +43,10 @@ const ContentBox = styled.div`
   max-width: 90%;
   box-sizing: border-box;
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Dodany cień dla efektu 3D */
 
   @media (max-width: 500px) {
     padding: 1.5rem;

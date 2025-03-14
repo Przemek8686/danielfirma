@@ -23,7 +23,7 @@ const ContactInfo = styled.div`
   display: flex;
   flex-direction: column; /* Elementy ułożone w pionie */
   align-items: center; /* Wyśrodkowanie elementów w poziomie */
-  margin-top: -2rem; /* Przesunięcie ContactInfo wyżej */
+  margin-top: 3rem; /* Przesunięcie ContactInfo wyżej */
 `;
 
 const ContactItem = styled.p`
