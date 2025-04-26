@@ -5,10 +5,33 @@ import Pagination from '../components/Pagination';
 
 
 // Import przykładowych zdjęć
-import project1 from '../assets/project1.jpg';
-import project2 from '../assets/project2.jpg';
-import project3 from '../assets/project3.jpg';
-import project4 from '../assets/project4.jpg';
+import project1 from '../assets/IMG-20250426-WA0006.jpg';
+import project2 from '../assets/IMG-20250426-WA0013.jpg';
+import project3 from '../assets/IMG-20250426-WA0016.jpg';
+import project4 from '../assets/IMG-20250426-WA0017.jpg';
+import project5 from '../assets/IMG-20250426-WA0022.jpg';
+import project6 from '../assets/IMG-20250426-WA0025.jpg';
+import project7 from '../assets/IMG-20250426-WA0027.jpg';
+import project8 from '../assets/IMG-20250426-WA0029.jpg';
+import project9 from '../assets/IMG-20250426-WA0029.jpg';
+import project10 from '../assets/IMG-20250426-WA0030.jpg';
+import project11 from '../assets/IMG-20250426-WA0033.jpg';
+import project12 from '../assets/IMG-20250426-WA0035.jpg';
+import project13 from '../assets/IMG-20250426-WA0036.jpg';
+import project14 from '../assets/IMG-20250426-WA0038.jpg';
+import project15 from '../assets/IMG-20250426-WA0040.jpg';
+import project16 from '../assets/IMG-20250426-WA0043.jpg';
+import project17 from '../assets/IMG-20250426-WA0044.jpg';
+import project18 from '../assets/IMG-20250426-WA0045.jpg';
+import project19 from '../assets/IMG-20250426-WA0047.jpg';
+import project20 from '../assets/IMG-20250426-WA0046.jpg';
+import project21 from '../assets/IMG-20250426-WA0049.jpg';
+import project22 from '../assets/IMG-20250426-WA0050.jpg';
+
+
+
+
+
 
 const ProjectenContainer = styled.div`
   padding: 2rem;
@@ -46,10 +69,28 @@ const SearchInput = styled.input`
 
 // Tablica z danymi zdjęć
 const images = [
-  { src: project1, alt: 'Łazienka nowoczesna' },
-  { src: project2, alt: 'Schody drewniane' },
-  { src: project3, alt: 'Salon minimalistyczny' },
-  { src: project4, alt: 'Kuchnia otwarta' },
+  { src: project1, alt: 'Raam' },
+  { src: project2, alt: 'Deur' },
+  { src: project3, alt: 'Garagedeur' },
+  { src: project4, alt: 'Raam' },
+  { src: project5, alt: 'Raam' },
+  { src: project6, alt: 'Terras Raam' },
+  { src: project7, alt: 'Raam' },
+  { src: project8, alt: 'Deur' },
+  { src: project9, alt: 'Deur' },
+  { src: project10, alt: 'Deur' },
+  { src: project11, alt: 'Deur' },
+  { src: project12, alt: 'Deur' },
+  { src: project13, alt: 'Deur' },
+  { src: project14, alt: 'Raam' },
+  { src: project15, alt: 'Raam' },
+  { src: project16, alt: 'Terras Raam' },
+  { src: project17, alt: 'Raam' },
+  { src: project18, alt: 'Deur' },
+  { src: project19, alt: 'Raam' },
+  { src: project20, alt: 'Raam' },
+  { src: project21, alt: 'Raam' },
+  { src: project22, alt: 'Raam' },
   // Dodaj więcej zdjęć tutaj
 ];
 
