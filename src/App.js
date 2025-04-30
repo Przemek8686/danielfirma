@@ -6,14 +6,14 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Projecten from './pages/Projecten';
 import Contact from './pages/Contact';
-import Loader from './components/Loader'; // Importujemy loader
+import Loader from './components/Loader';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
-      setIsLoading(false); // Ukryj loader po 2 sekundach (symulacja ładowania)
+      setIsLoading(false);
     }, 2000);
   }, []);
 
@@ -21,7 +21,7 @@ const App = () => {
     <Router basename="/danielfirma">
       <GlobalStyles />
       {isLoading ? (
-        <Loader /> // Pokazujemy loader podczas ładowania
+        <Loader />
       ) : (
         <>
           <Header />
