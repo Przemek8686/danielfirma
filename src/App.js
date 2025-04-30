@@ -12,33 +12,46 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-    return () => clearTimeout(timer); // Cleanup timer
+    // Symulacja ładowania zasobów
+    const loadAssets = async () => {
+      try {
+        // Tutaj można dodać ładowanie rzeczywistych zasobów
+        await new Promise(resolve => setTimeout(resolve, 2000));
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    loadAssets();
   }, []);
 
   return (
-    <Router basename="/danielfirma">
-      <GlobalStyles />
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <>
-          <Header />
-          <Navbar />
-          <Routes>
-            {/* Główna ścieżka z przekierowaniem */}
-            <Route path="/" element={<Navigate to="/home" replace />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/projecten" element={<Projecten />} />
-            <Route path="/contact" element={<Contact />} />
-            {/* Fallback dla nieznanych ścieżek */}
-            <Route path="*" element={<Navigate to="/home" replace />} />
-          </Routes>
-        </>
-      )}
-    </Router>
+    <div className="app">
+      <Router basename="/danielfirma">
+        <GlobalStyles />
+        
+        {isLoading ? (
+          <Loader fullScreen />
+        ) : (
+          <>
+            <Header />
+            <Navbar />
+            <main className="content">
+              <Routes>
+                {/* Główna ścieżka z przekierowaniem */}
+                <Route path="/" element={<Navigate to="/home" replace />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/projecten" element={<Projecten />} />
+                <Route path="/contact" element={<Contact />} />
+                
+                {/* Fallback dla nieznanych ścieżek */}
+                <Route path="*" element={<Navigate to="/home" replace />} />
+              </Routes>
+            </main>
+          </>
+        )}
+      </Router>
+    </div>
   );
 };
 
