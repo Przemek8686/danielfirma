@@ -12,10 +12,8 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Symulacja ładowania zasobów
     const loadAssets = async () => {
       try {
-        // Tutaj można dodać ładowanie rzeczywistych zasobów
         await new Promise(resolve => setTimeout(resolve, 2000));
       } finally {
         setIsLoading(false);
@@ -27,7 +25,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <Router basename="/danielfirma">
+      <Router> {/* Usunięto basename */}
         <GlobalStyles />
         
         {isLoading ? (
@@ -38,13 +36,10 @@ const App = () => {
             <Navbar />
             <main className="content">
               <Routes>
-                {/* Główna ścieżka z przekierowaniem */}
                 <Route path="/" element={<Navigate to="/home" replace />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/projecten" element={<Projecten />} />
                 <Route path="/contact" element={<Contact />} />
-                
-                {/* Fallback dla nieznanych ścieżek */}
                 <Route path="*" element={<Navigate to="/home" replace />} />
               </Routes>
             </main>
